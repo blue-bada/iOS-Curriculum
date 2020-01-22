@@ -2,9 +2,9 @@
 
 Optional\(이하 옵셔널\)은 값이 있을수도, 없을수도 있는 변수에서 쓰이는 문법이며, Swift의 특징이자 장점이라고 할 수 있습니다.
 
-개발을 할 때 null값은 주요 버그의 원인이 되는 경우가 많습니다. 그래서 최근 Kotlin의 Nullable, Java의 옵셔널처럼 해당 값이 null이 들어갈 수 있는 경우에 옵셔널을 이용하여 null에 의한 버그를 방지하는 경우가 많습니다.
+개발을 할 때 null\(이하 nil\)값은 주요 버그의 원인이 되는 경우가 많습니다. 그래서 최근 Kotlin의 Nullable, Java의 옵셔널처럼 해당 값이 null이 들어갈 수 있는 경우에 옵셔널을 이용하여 null에 의한 버그를 방지하는 경우가 많습니다.
 
-Swift는 거기에 좀 더 엄격하게 관리합니다. 다른 언어는 해당 문법 없이 Integer에도 nil을 넣을 수 있지만, Swift는 **기본적으로** 변수에 nil값이 **절대로** 들어갈 수 없습니다. 만약 Int값에 null\(nil\)이 들어갈 가능성이라도 있다면 
+Swift는 거기에 좀 더 엄격하게 관리합니다. 다른 언어는 해당 문법 없이 Integer에도 nil을 넣을 수 있지만, Swift는 **기본적으로** 변수에 nil값이 **절대로** 들어갈 수 없습니다. 만약 Int값에 nil이 들어갈 가능성이라도 있다면 
 
 ```bash
 Nil cannot be assigned to type 'Int'
@@ -27,7 +27,7 @@ num = nil
 
 1. 강제로 여는 방법\(강제 언래핑\)
 
-추천하지 않습니다. 강제 언래핑은 강제로 상자를 여는 방법입니다. Optional\(Int\)라면 Int로 바뀌게 됩니다. 방법은 다음과 같습니다.
+강제 언래핑은 강제로 상자를 여는 방법입니다. Optional\(Int\)라면 Int로 바뀌게 됩니다. 방법은 다음과 같습니다.
 
 ```swift
 var num :Int? = 30
@@ -52,7 +52,7 @@ print(value)
 Fatal error: Unexpectedly found nil while unwrapping an Optional value: file MyPlayground.playground, line 4
 ```
 
-오류 뜻은 "옵셔널을 언래핑하면서 예상치못한 nil을 찾았습니다", 즉 흔히 얘기하는 NullPointException이 걸렸습니다. 저런 오류는 괜히 생면 개발할 때 많이 귀찮아집니다.  그래서 이런 점을 미연에 방지하기 위해서 강제 언래핑은 비추천합니다. 굳이 쓴다면 어떤일이 있어도 nil이 안 나오는 경우에만 사용하시기 바랍니다.
+오류 뜻은 "옵셔널을 언래핑하면서 예상치못한 nil을 찾았습니다", 흔히 얘기하는 NullPointException이 걸렸습니다. 저런 오류가 생기면 개발할 때 또다른 버그를 일으키는 원인이 됩니다.  그래서 이런 점을 미연에 방지하기 위해서 강제 언래핑은 비추천합니다. 굳이 쓴다면 어떤일이 있어도 nil이 안 나오는 경우에만 사용하시기 바랍니다.
 
 2. 값 체크해보기\(옵셔널 바인딩\)
 
