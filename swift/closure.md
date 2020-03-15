@@ -1,5 +1,7 @@
 # Closure
 
+
+
 ```swift
 func printStudentNumber(message: String) -> (String) -> String {
     return { (number: String) -> String in
