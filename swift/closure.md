@@ -1,5 +1,7 @@
 # Closure
 
+
+
 ```swift
 func printStudentNumber(message: String) -> (String) -> String {
     return { (number: String) -> String in
@@ -57,6 +59,8 @@ print(printStudentNumber("학번 : ", "2016136121"))
 ```
 
 
+
+클로저 활용\(Alamofire 등 http 통신할 때\)
 
 
 

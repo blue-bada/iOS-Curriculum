@@ -17,4 +17,8 @@
   * [Xcode 설치할 때 준비물](xcode/xcode.md)
   * [Xcode설치](xcode/xcode-1.md)
   * [프로젝트 만들기](xcode/undefined.md)
+* [\[프로젝트 1\] 인스타그램 만들기](1/README.md)
+  * [글자 넣기\(Text, VStack, HStack\)](1/text-vstack-hstack.md)
+  * [이미지 넣기\(Image\)](1/image.md)
+  * [인스타 레이아웃 만들기\(Spacer, Padding\)](1/spacer-padding.md)
 
