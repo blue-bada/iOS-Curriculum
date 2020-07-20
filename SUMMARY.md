@@ -13,7 +13,7 @@
   * [Tuple](swift/tuple.md)
   * [Protocol](swift/protocol.md)
   * [Extension](swift/extension.md)
-* [Xcode 설치 및 톧아보기](xcode/README.md)
+* [Xcode 설치 및 톺아보기](xcode/README.md)
   * [Xcode 설치할 때 준비물](xcode/xcode.md)
   * [Xcode설치](xcode/xcode-1.md)
   * [프로젝트 만들기](xcode/undefined.md)
