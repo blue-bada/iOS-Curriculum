@@ -23,4 +23,5 @@
   * [인스타 레이아웃 만들기\(Spacer, Padding\)](1/spacer-padding.md)
   * [좋아요 버튼 만들기\(State, Button\)](1/state-button.md)
   * [여러 개의 사진 보여주기\(ScrollView, List, ForEach\)](1/scrollview-list-foreach.md)
+  * [사진 누르면 해당 페이지로 이동\(NavigationView, NavigationLink\)](1/navigationview-navigationlink.md)
 
